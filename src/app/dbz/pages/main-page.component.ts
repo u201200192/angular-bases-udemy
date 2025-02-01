@@ -8,16 +8,22 @@ import { Character } from "../interfaces/character.interface";
 
 export class MainPageComponent {
 
-public characters: Character[] = [{
-  name: 'Krillin',
-  power: 1000
-},{
-  name: 'Goku',
-  power: 9000
-},{
-  name: 'Vegeta',
-  power: 7501
-}];
+  public characters: Character[] = [{
+    name: 'Krillin',
+    power: 1000
+  }, {
+    name: 'Goku',
+    power: 9000
+  }, {
+    name: 'Vegeta',
+    power: 7501
+  }];
+
+  onNewCharacterMain(character: Character): void {
+
+    console.log('MainPage');
+    console.log(character);
+  }
 
 
 }
